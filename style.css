@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: beige;
     color: black;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 header {
@@ -25,5 +25,133 @@ header h1 {
 }
 
 main {
-    max-width: 10000px;
+    max-width: 900px;
+    margin: 15px 10px;
+    padding: 5px;
+}
+
+section {
+    margin: 10px 0;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: inset 9px 9px 50px rgba(0, 0, 0, 0.2);
+}
+
+#note-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+#note-input {
+    padding: 5px;
+    border: 1px solid #4d1010;
+    border-radius: 30px;
+    margin: 5px 4px;
+}
+
+#note-category {
+    padding: 5px;
+    border: 1px solid #4d1010;
+    border-radius: 30px;
+    margin: 5px 4px;
+}
+
+
+#note-count {
+    padding: 5px;
+    border: 1px solid #4d1010;
+    border-radius: 30px;
+    margin: 5px 4px;
+}
+
+#search-input {
+    padding: 5px;
+    border: 1px solid #4d1010;
+    border-radius: 30px;
+    margin: 5px 4px;
+}
+
+#error-message {
+    color: red;
+}
+
+    button {
+        padding: 5px 10px;
+        border: 1px solid #4d1010;
+        border-radius: 30px;
+        background-color: #4d1010;
+        color: white;
+        cursor: pointer;
+        margin: 5px 4px;
+    }
+
+    button:hover {
+        background-color: #6e1a1a;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .personal {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4d1010;
+  }
+
+  .work {
+    background-color: #929e4b;
+    border-left: 5px solid #a54e4e;
+  }
+
+  .ideas {
+    background-color: #9e7f50;
+    border-left: 5px solid #2b1b1b;
+  }
+  
+footer {
+    text-align: center;
+    color: black;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+
+    main {
+        margin: 10px 5px;
+        padding: 3px;
+    }
+
+    section {
+        margin: 5px 0;
+        padding: 1px;
+    }
+
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-input, #note-category, #search-input, #note-count {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
